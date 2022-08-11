@@ -9,9 +9,8 @@ let uploadImg = (req,res) => {
     form.parse(req,function(err,fields,files){
         if(err) throw err;
         let arr = files.file.path.split("\\")
-        req.session = `http://127.0.0.1:2345/${arr[0].replace("public/","")}`;
-        res.cookie('name',req.session,{ maxAge: 3600000, path: '/register'});
-        console.log(req.session)
+        req.session = `http://127.0.0.1:2345/${arr[1]}/${arr[2]}/`;
+        res.cookie('name',req.session+arr[3],{ maxAge: 3600000, path: '/register'});
         res.end();
     });
 }
