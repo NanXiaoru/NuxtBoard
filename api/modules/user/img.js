@@ -1,4 +1,5 @@
 // 处理用户头像
+//2022.08.11修复上传成功没有显示的错误
 const formidable = require('formidable');
 
 // 修改/上传头像
