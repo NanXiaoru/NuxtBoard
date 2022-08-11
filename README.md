@@ -39,3 +39,8 @@ The first step is to prepare the database. It is recommended to use a remote dat
   第一检查数据库版本，是否低于5.7.28或高于8.0；
   第二检查用户名、密码以及数据库名称是否正确，是否在api/config/msg.config.js里修改；
   第三检查防火墙是否放行3306端口；
+
+
+# 2022.08.11更新说明
+  推荐大家使用yarn进行依赖拉取和安装
+  修复了注册页面头像上传成功后无法显示的问题
